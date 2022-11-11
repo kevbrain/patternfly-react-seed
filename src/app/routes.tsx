@@ -28,38 +28,20 @@ export type AppRouteConfig = IAppRoute | IAppRouteGroup;
 
 const routes: AppRouteConfig[] = [
   {
-    component: Dashboard,
-    exact: true,
-    label: 'Dashboard',
-    path: '/',
-    title: 'PatternFly Seed | Main Dashboard',
-  },
-  {
-    component: Support,
-    exact: true,
-    label: 'Support',
-    path: '/support',
-    title: 'PatternFly Seed | Support Page',
-  },
-  {
-    label: 'Settings',
+    label: 'CapacityTool',
     routes: [
       {
-        component: GeneralSettings,
+        component: Dashboard,
         exact: true,
-        label: 'General',
-        path: '/settings/general',
-        title: 'PatternFly Seed | General Settings',
+        label: 'Dashboard',
+        path: '/',
+        title: 'CapacityTool | General Dashboard',
       },
-      {
-        component: ProfileSettings,
-        exact: true,
-        label: 'Profile',
-        path: '/settings/profile',
-        title: 'PatternFly Seed | Profile Settings',
-      },
+ 
     ],
   },
+ 
+ 
 ];
 
 // a custom hook for sending focus to the primary content container
